@@ -31,6 +31,7 @@ function App() {
     if (data) {
       const filesArray = data.docs.map((val) => val.url);
       setSelectedFiles(filesArray);
+      setSelectedDrive('Google Drive');
     }
   }, [data]);
 
