@@ -78,7 +78,11 @@ function App() {
           <ul>
             {selectedFiles.map((link) => (
               <li>
-                <a href={link} target="_blank " className="text-blue-400">
+                <a
+                  href={link}
+                  target="_blank "
+                  className="text-blue-400 hover:underline cursor-pointer"
+                >
                   {link}
                 </a>
               </li>
