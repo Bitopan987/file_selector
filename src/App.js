@@ -11,7 +11,7 @@ function App() {
     REACT_APP_GOOGLE_CLIENT_ID,
   } = process.env;
 
-  const [openPicker, data, authResponse] = useDrivePicker();
+  const [openPicker, data] = useDrivePicker();
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [selectedDrive, setSelectedDrive] = useState('Google Drive');
 
