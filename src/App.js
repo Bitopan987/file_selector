@@ -74,7 +74,9 @@ function App() {
       {selectedFiles.length ? (
         <div className="m-auto mt-8 w-1/2 border-t pt-8">
           <h2 className="text-2xl mb-4">
-            {`You selected ${selectedFiles.length} items from ${selectedDrive}`}{' '}
+            {`You selected ${selectedFiles.length} ${
+              selectedFiles.length > 1 ? 'items' : 'item'
+            } from ${selectedDrive}`}{' '}
           </h2>
           <ul>
             {selectedFiles.map((link) => (
